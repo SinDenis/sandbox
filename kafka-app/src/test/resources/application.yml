@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:12:///test?TC_DAEMON=true
+    password: postgres
+    username: postgres
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
